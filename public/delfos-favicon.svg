@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="10.915505mm"
+   height="10.915505mm"
+   viewBox="0 0 10.915505 10.915505"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="delfos-favicon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="8.7988368"
+     inkscape:cx="61.201272"
+     inkscape:cy="15.683891"
+     inkscape:window-width="2560"
+     inkscape:window-height="1417"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="text2498" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-72.867722,-111.25797)">
+    <rect
+       style="fill:none;stroke:none;stroke-width:2.09021;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
+       id="rect8444"
+       width="10.915505"
+       height="10.915505"
+       x="72.867722"
+       y="111.25797" />
+    <g
+       aria-label="D"
+       transform="matrix(0.57473204,0,0,0.52889942,25.043964,51.143371)"
+       id="text2498"
+       style="font-weight:bold;font-size:26.4777px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';stroke-width:0.275809">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:20.5092px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto Heavy';stroke-width:0.0589231"
+         x="90.518517"
+         y="126.22314"
+         id="text9759"
+         transform="scale(0.95929868,1.0424282)"><tspan
+           sodipodi:role="line"
+           id="tspan9757"
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:'Roboto Heavy';stroke-width:0.0589231"
+           x="90.518517"
+           y="126.22314">D</tspan></text>
+    </g>
+  </g>
+</svg>
