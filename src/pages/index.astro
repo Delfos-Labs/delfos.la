@@ -11,26 +11,26 @@ import { DottedBackground } from "../components/dotted-background";
     class="w-screen h-screen flex flex-col gap-4 items-center justify-center"
   >
     <DottedBackground
-      className="min-h-screen min-w-screen p-8 absolute top-0 left-0"
+      className="min-h-screen min-w-screen p-8 absolute top-0 left-0 z-0"
       dotSize={1}
       dotSpacing={24}
       dotColor="rgb(148, 163, 184)"
       opacity={0.4}
     />
     <div
-      class="w-full max-w-96 flex flex-col gap-4 items-center justify-center flex-1"
+      class="w-full max-w-96 px-4 flex flex-col gap-4 items-center justify-center flex-1 z-10"
     >
-      <p class="text-8xl font-bold text-slate-900">Delfos</p>
-      <p class="text-3xl text-center text-gray-700">
+      <p class="md:text-8xl text-5xl font-bold text-slate-900">Delfos</p>
+      <p class="md:text-3xl text-xl text-center text-gray-700">
         Soluciones inteligentes que <span class="font-bold">simplifican</span> la gestión de tu negocio.
       </p>
       <div class="flex gap-4 items-center justify-center">
         <a
           href="https://cervant.chat"
-          class="text-3xl underline text-yellow-500">Cervant</a
+          class="text-xl md:text-3xl underline text-yellow-500">Cervant</a
         >
         <div class="w-2 h-2 rounded-full bg-black"></div>
-        <a href="https://clau.one" class="text-3xl underline text-blue-500"
+        <a href="https://clau.one" class="text-xl md:text-3xl underline text-blue-500"
           >Clau</a
         >
       </div>
