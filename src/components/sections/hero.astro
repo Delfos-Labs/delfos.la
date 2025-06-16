@@ -1,0 +1,37 @@
+---
+import { DottedBackground } from "../dotted-background";
+import { Icon } from 'astro-icon/components'
+
+---
+
+<div class="w-full h-screen flex flex-col gap-4 items-center justify-center">
+  <DottedBackground
+    className="min-h-screen w-full p-8 absolute top-0 left-0 z-0"
+    dotSize={1}
+    dotSpacing={24}
+    dotColor="rgb(148, 163, 184)"
+    opacity={0.4}
+  />
+  <div
+    class="w-full max-w-[900px] px-4 flex flex-col gap-4 items-center justify-center flex-1 z-10"
+  >
+  <!-- Icon logo -->
+   
+      <Icon name="logo" class="w-32 h-32 text-blue-600" />
+
+    <p class="md:text-7xl text-5xl text-slate-900 text-center">
+      <span class="font-bold">Delfos</span>, tecnología con propósito, guiada por la sabiduría
+    </p>
+    <p class="md:text-3xl text-xl text-center text-gray-700">
+      Soluciones inteligentes que guían a empresas a soluciones inteligentes, crecimiento sostenido y transformación real.
+    </p>
+
+    <!-- link to #products -->
+    <a href="#products">
+      <button class="px-4 py-2 mt-4 rounded-full bg-gray-100 hover:bg-gray-200 font-semibold border">
+        Conoce nuestros productos
+
+      </button>
+    </a>
+  </div>
+</div>

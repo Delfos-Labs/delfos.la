@@ -11,10 +11,12 @@
   "dependencies": {
     "@astrojs/mdx": "^4.3.0",
     "@astrojs/react": "^4.3.0",
+    "@iconify-json/mdi": "^1.2.3",
     "@tailwindcss/vite": "^4.1.9",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "astro": "^5.9.2",
+    "astro-icon": "^1.1.5",
     "astro-seo": "^0.8.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

@@ -1,43 +1,50 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import { DottedBackground } from "../components/dotted-background";
+import Hero from "../components/sections/hero.astro";
+import Footer from "../components/sections/footer.astro";
+import FlexColLayout from "../layouts/FlexColLayout.astro";
+import Showcase from "../components/sections/showcase.astro";
+import Cta from "../components/sections/cta.astro";
+
+import ClauImage from "../assets/image/clau.png";
+import CervantImage from "../assets/image/cervant.png";
 ---
 
-<Layout
-  title="Delfos - Soluciones inteligentes para tu negocio"
-  
->
-  <div
-    class="w-screen h-screen flex flex-col gap-4 items-center justify-center"
-  >
-    <DottedBackground
-      className="min-h-screen min-w-screen p-8 absolute top-0 left-0 z-0"
-      dotSize={1}
-      dotSpacing={24}
-      dotColor="rgb(148, 163, 184)"
-      opacity={0.4}
+<FlexColLayout title="Delfos - Soluciones inteligentes para tu negocio">
+  <Hero />
+  <div id="products" class="w-full flex flex-col items-center justify-center gap-8">
+    <Showcase
+      bigText="<span class='font-bold'>Cervant</span>, redefine la atención al cliente desde una plataforma inteligente."
+      smallText="Tus clientes escriben por <span class='font-bold'>WhatsApp, Instagram y Telegram</span> a la vez. Con <span class='font-bold'>Cervant</span>, centralizas todo en un solo panel, priorizas conversaciones, das contexto a tu equipo y detectas oportunidades en tiempo real. Conexión omnicanal, simple y poderosa."
+      imageSrc={CervantImage}
+      imageAlt="Imagen de Cervant"
+      textSide="right"
+      buttonLink="https://cervant.chat"
+      buttonText="Conoce Cervant"
+      buttonColor="bg-[#ffbe06] hover:bg-yellow-500"
+      buttonTextColor="text-black"
     />
-    <div
-      class="w-full max-w-96 px-4 flex flex-col gap-4 items-center justify-center flex-1 z-10"
-    >
-      <p class="md:text-8xl text-5xl font-bold text-slate-900">Delfos</p>
-      <p class="md:text-3xl text-xl text-center text-gray-700">
-        Soluciones inteligentes que <span class="font-bold">simplifican</span> la gestión de tu negocio.
-      </p>
-      <div class="flex gap-4 items-center justify-center">
-        <a
-          href="https://cervant.chat"
-          class="text-xl md:text-3xl underline text-yellow-500">Cervant</a
-        >
-        <div class="w-2 h-2 rounded-full bg-black"></div>
-        <a href="https://clau.one" class="text-xl md:text-3xl underline text-blue-500"
-          >Clau</a
-        >
-      </div>
-    </div>
-    <!-- simple footer -->
-    <footer class="text-center text-sm text-gray-500">
-      <p>© 2025 Delfos INC. Todos los derechos reservados.</p>
-    </footer>
+  
+    <Showcase
+      bigText="<span class='font-bold'>Clau</span>, facilidades reales para tu empresa, todo en un solo lugar."
+      smallText="Clau, es una suite digital compuesta por apps móviles y un panel web centralizado. Cada herramienta está diseñada para cubrir necesidades específicas de negocios modernos: desde la gestión de clientes hasta el seguimiento de envíos, reservas o turnos. Todo con control total, en tiempo real."
+      imageSrc={ClauImage}
+      imageAlt="Imagen de Clau"
+      textSide="left"
+      buttonLink="https://clau.one"
+      buttonText="Conoce Clau"
+      buttonColor="bg-[#549dfd] hover:bg-blue-500"
+      buttonTextColor="text-white"
+      
+    />
   </div>
-</Layout>
+
+  <Cta />
+  <Footer />
+
+  <style>
+    /* smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</FlexColLayout>

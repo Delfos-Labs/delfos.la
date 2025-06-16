@@ -1,0 +1,39 @@
+---
+import { Image } from "astro:assets";
+import CtaImage from "../../assets/image/cta.png";
+import { DottedBackground } from "../dotted-background";
+---
+
+<div class="w-full grid place-items-center">
+  <div class="flex flex-col md:flex-row md:gap-0 gap-8 w-full max-w-[1000px] p-8">
+    <div class="flex-1 w-full max-w-[600px]">
+      <Image src={CtaImage} alt="Delfos CTA Image" />
+    </div>
+    <div class="flex-1 flex items-center justify-center">
+      <div
+        class="p-8 rounded-2xl bg-gradient-to-b from-gray-100 to-white flex flex-col items-center justify-center gap-4"
+      >
+        <h2 class="text-5xl text-gray-900">
+          <span class="font-bold">Delfos</span> es justo lo que tu empresa necesita
+        </h2>
+
+        <div class="flex gap-2">
+          <a href="#products">
+            <button
+              class="px-4 py-2 mt-4 rounded-full bg-gray-100 hover:bg-gray-200 font-semibold"
+            >
+              Prueba Clau
+            </button>
+          </a>
+          <a href="#products">
+            <button
+              class="px-4 py-2 mt-4 rounded-full bg-gray-100 hover:bg-gray-200 font-semibold"
+            >
+              Prueba Cervant
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

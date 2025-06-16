@@ -1,0 +1,63 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
+interface Props {
+  bigText: string;
+  smallText: string;
+  imageSrc: ImageMetadata;
+  imageAlt: string;
+  textSide: "left" | "right";
+  buttonText?: string;
+  buttonLink?: string;
+  buttonColor?: string;
+  buttonTextColor?: "text-white" | "text-black";
+}
+
+const {
+  bigText,
+  smallText,
+  imageSrc,
+  imageAlt,
+  textSide,
+  buttonColor,
+  buttonLink,
+  buttonText,
+  buttonTextColor = "text-white",
+} = Astro.props as Props;
+
+const flexDirection =
+  (textSide === "left" ? "md:flex-row" : "md:flex-row-reverse") + " flex-col";
+---
+
+<div class="w-full grid place-items-center">
+  <div
+    class="flex flex-col items-center justify-center gap-4 p-8 w-full max-w-[1000px]"
+  >
+    <div
+      class={`flex 
+    ${flexDirection} items-center justify-center gap-8 `}
+    >
+      <div class="flex-1">
+        <h2 class="text-5xl text-gray-900" set:html={bigText} />
+      </div>
+      <div class="flex-1 w-full max-w-[450px]">
+        <Image src={imageSrc} alt={imageAlt} />
+      </div>
+    </div>
+    <div class="w-full">
+      <p class="text-gray-700 mt-2 text-center" set:html={smallText} />
+    </div>
+    <div class="w-full justify-center flex">
+      <a href={buttonLink}>
+        <button
+          class={`px-4 py-2 mt-4 
+          ${buttonTextColor}
+          font-semibold rounded-full ${buttonColor ?? "bg-blue-600 hover:bg-blue-700"}`}
+        >
+          {buttonText ?? "Learn More"}
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
