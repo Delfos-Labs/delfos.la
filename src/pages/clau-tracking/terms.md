@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: ClauTracking - Política de privacidad
+title: ClauTracking - Términos y Condiciones
 gist: Descubre cómo se tratan tus datos.
 tags: []
 ---
