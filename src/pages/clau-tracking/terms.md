@@ -5,10 +5,6 @@ gist: Descubre cómo se tratan tus datos.
 tags: []
 ---
 
-Por supuesto, aquí tienes el texto sin las líneas divisorias:
-
----
-
 Última actualización: 4 de julio de 2025
 
 ### 1. Aceptación de los Términos
